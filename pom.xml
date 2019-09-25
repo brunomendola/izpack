@@ -20,26 +20,23 @@
   </licenses>
 
   <scm>
-    <url>https://github.com/izpack/izpack</url>
-    <connection>scm:git:git://github.com/izpack/izpack.git</connection>
-    <developerConnection>scm:git:git@github.com:izpack/izpack.git</developerConnection>
+    <url>https://github.com/brunomendola/izpack</url>
+    <connection>scm:git:git://github.com/brunomendola/izpack.git</connection>
+    <developerConnection>scm:git:git@github.com:brunomendola/izpack.git</developerConnection>
     <tag>HEAD</tag>
   </scm>
 
   <distributionManagement>
     <snapshotRepository>
-      <id>sonatype-nexus-snapshots</id>
-      <name>Sonatype Nexus snapshot repository</name>
-      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+      <id>internal-repository</id>
+      <name>Artifactory snapshot repository</name>
+      <url>http://dev.beltos.com/artifactory/list/ext-snapshot-local</url>
     </snapshotRepository>
-    <!-- We do not deploy directly to the staging repository, but via the Nexus staging plugin -->
-    <!--
     <repository>
-      <id>sonatype-nexus-staging</id>
-      <name>Sonatype Nexus release repository</name>
-      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
+      <id>internal-repository</id>
+      <name>Artifactory release repository</name>
+      <url>http://dev.beltos.com/artifactory/list/ext-release-local</url>
     </repository>
-    -->
   </distributionManagement>
 
   <properties>
